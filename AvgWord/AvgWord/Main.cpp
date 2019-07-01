@@ -11,11 +11,12 @@ int main() {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
-	cout<<avgWord();
-	//char a = 'ô';
+	/*char   a[] = "asd\n";
+	cout << a;*/
 
-	//cout << isspace((unsigned char)a);
-	//cout<<" "<<ispunct((unsigned char)a);
+
+	cout<<avg();
+	
 	cin.get(); cin.get(); cin.get();
 	cin.get();
 	cout << "\n Press Enter";
