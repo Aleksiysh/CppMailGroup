@@ -16,12 +16,13 @@ int main() {
 	}
 	cin >> cur;
 	while (cur != 0) {
-		if (max < cur)
+		if (max < cur) {
 			prev_max = max;
 			max = cur;
-		if (prev_max < cur)
-			prev_max = cur;
-
+			if (prev_max < cur)
+				prev_max = cur;
+		}
+		else if (prev_max < cur) prev_max = cur;
 		cin >> cur;
 	}
 	cout << prev_max;
