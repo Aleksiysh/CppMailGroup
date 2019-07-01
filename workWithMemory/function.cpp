@@ -23,7 +23,7 @@ char * strcat(char * str1, const char * str2)
 	return str1;
 }
 
-int strlen(const char * str)
+int strlen_(const char * str)
 {
 	const char * eos= str;
 	while (*eos++);
@@ -41,7 +41,7 @@ char * substr(char * str, char * sub)
 	return nullptr;
 }
 
-char * strchr(const char * str, int ch)
+char * strchr_(const char * str, int ch)
 {
 	while (*str && *str != (char)ch) str++;
 	if (*str == (char)ch) return (char*)str;

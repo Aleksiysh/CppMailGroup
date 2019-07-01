@@ -12,11 +12,11 @@ char * strcpy(char * str1, const char * str2);
 /*конкатенация строк*/
 char * strcat(char *str1, const char* str2);
 /*длина строки*/
-int strlen(const char* str);
+int strlen_(const char* str);
 
 /*поиск адреса подстроки*/
 char * substr(char * str, char *sub);
 /*поиск символа в стрроке*/
-char * strchr(const char * str, int ch);
+char * strchr_(const char * str, int ch);
 
 
