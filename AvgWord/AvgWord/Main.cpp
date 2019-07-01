@@ -12,7 +12,8 @@ int main() {
 	SetConsoleOutputCP(1251);
 
 	avgWord();
-
+	char* a;
+	a = getWord();
 
 	cin.get();
 	cout << "\n Press Enter";

@@ -1,6 +1,4 @@
 #pragma once
 
-int avgWord() {
-
-	return 0;
-}
+int avgWord();
+char * getWord();
