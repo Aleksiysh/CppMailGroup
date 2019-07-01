@@ -1,4 +1,4 @@
-#include "function.h"
+﻿#include "function.h"
 
 int strcmp(const char * str1, const char * str2)
 {
@@ -6,6 +6,46 @@ int strcmp(const char * str1, const char * str2)
 		str1++, str2++;
 	}
 	return *str1 - *str2;
+}
+
+char * strcpy(char * str1, const char * str2)
+{
+	char *d = str1;
+	while (*d++ = *str2++);
+	return str1;
+}
+
+char * strcat(char * str1, const char * str2)
+{
+	char *cp = str1;
+	while (*cp) str1++;
+	while (*cp++ = *str2++);
+	return str1;
+}
+
+int strlen(const char * str)
+{
+	const char * eos= str;
+	while (*eos++);
+	return (int)(eos-str-1);
+}
+
+char * substr(char * str, char * sub)
+{
+	int i, j;
+	for (i = j = 0; str[i] != '\0'; i++) {
+		while ((str[i + j] != '\0') && (sub[j] == str[i + j])) j++;
+		if (sub[j] == '\0') return &str[i];
+		j = 0;
+	}
+	return nullptr;
+}
+
+char * strchr(const char * str, int ch)
+{
+	while (*str && *str != (char)ch) str++;
+	if (*str == (char)ch) return (char*)str;
+	return nullptr;
 }
 
 int findmax(int * arr, int count)

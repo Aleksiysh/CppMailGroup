@@ -1,7 +1,22 @@
-#pragma once
-/*сравнение строк*/
-int strcmp(const char *str1, const char * str2); //сравнение строк
-/*Индекс максимального элемента массива*/
+п»ї#pragma once
+
+/*РРЅРґРµРєСЃ РјР°РєСЃРёРјР°Р»СЊРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р° РјР°СЃСЃРёРІР°*/
 int findmax(int * arr, int count);
-/*второй максимальный элемента*/
+/*РІС‚РѕСЂРѕР№ РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚Р°*/
 int getmax2(const int *arr, int count);
+
+/*СЃСЂР°РІРЅРµРЅРёРµ СЃС‚СЂРѕРє*/
+int strcmp(const char *str1, const char * str2); 
+/*РєРѕРїРёСЂРѕРІР°РЅРёРµ СЃС‚СЂРѕРє*/
+char * strcpy(char * str1, const char * str2);
+/*РєРѕРЅРєР°С‚РµРЅР°С†РёСЏ СЃС‚СЂРѕРє*/
+char * strcat(char *str1, const char* str2);
+/*РґР»РёРЅР° СЃС‚СЂРѕРєРё*/
+int strlen(const char* str);
+
+/*РїРѕРёСЃРє Р°РґСЂРµСЃР° РїРѕРґСЃС‚СЂРѕРєРё*/
+char * substr(char * str, char *sub);
+/*РїРѕРёСЃРє СЃРёРјРІРѕР»Р° РІ СЃС‚СЂСЂРѕРєРµ*/
+char * strchr(const char * str, int ch);
+
+
